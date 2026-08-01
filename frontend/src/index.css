@@ -1,1 +1,76 @@
 @import "tailwindcss";
+
+/* Dark mode styles */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Dark mode base styles */
+.dark body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.dark .bg-white {
+  background-color: #16213e;
+}
+
+.dark .bg-gray-50 {
+  background-color: #1a1a2e;
+}
+
+.dark .bg-gray-100 {
+  background-color: #1a1a2e;
+}
+
+.dark .text-gray-600 {
+  color: #a0a0b0;
+}
+
+.dark .text-gray-500 {
+  color: #808090;
+}
+
+.dark .border-gray-300 {
+  border-color: #2a2a4a;
+}
+
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
+}
+
+/* Leaflet map fixes */
+.leaflet-container {
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}

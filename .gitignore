@@ -1,0 +1,41 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Backend / Java
+backend/target/
+backend/uploads/
+*.class
+*.jar
+*.war
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment / Secrets
+.env
+.env.local
+*.pem
+*.key
+
